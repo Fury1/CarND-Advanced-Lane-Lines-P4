@@ -1,1 +1,2 @@
 # CarND-Advanced-Lane-Lines-P4
+This is the fourth project in the Udacity Self Driving ND program. In this project it was required to plot out lane lines using more advanced methods then in project one. Included in the repo is a writeup report, a main python script p4.py, some associated functions/classes in functions.py, images at diffrent stages of the code in output_images, and a final project video with the code applied to it.
