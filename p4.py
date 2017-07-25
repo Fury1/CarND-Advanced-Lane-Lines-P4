@@ -97,10 +97,10 @@ def process_image(img, mtx=mtx, dist=dist):
 	"""
 
 	# Compute the curvature of the road
-	left_curve, center_offset, right_curve = functions.measure_curve(lane_lines_image,
-																	ploty,
-																	lines.latest_left_fitx,
-																	lines.latest_right_fitx)
+left_curve, center_offset, right_curve = functions.measure_curve(lane_lines_image,
+								ploty,
+								lines.latest_left_fitx,
+								lines.latest_right_fitx)
 
 	# # Uncomment for test image processing
 	# curves_and_centers.append([left_curve, center_offset, right_curve])
@@ -113,14 +113,14 @@ def process_image(img, mtx=mtx, dist=dist):
 
 	# Plot the final lane detection result back on to the original image
 	result = functions.plot_lane(destination,
-								warped,
-								ploty,
-								lines.latest_left_fitx,
-								lines.latest_right_fitx,
-								Minv,
-								left_curve,
-								right_curve,
-								center_offset)
+					warped,
+					ploty,
+					lines.latest_left_fitx,
+					lines.latest_right_fitx,
+					Minv,
+					left_curve,
+					right_curve,
+					center_offset)
 
 	# # Uncomment for test image processing
 	# plt.imsave('output_images\\test_images_final\\' + image_name, result)
